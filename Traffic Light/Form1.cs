@@ -6,8 +6,7 @@ namespace Traffic_Light
         {
             InitializeComponent();
             ctrlTrafficLights1.Start();
-            ctrlTrafficLights2.Start();
-            ctrlTrafficLights3.Start();
+
         }
 
         private void ctrlTrafficLights1_GreenLightOn(object sender, Traffic_Light.ctrlTrafficLights.TraficLightEventArgs e)
