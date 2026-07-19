@@ -47,6 +47,7 @@ namespace Traffic_Light
         byte _OrangeTime = 3;
         byte _RedTime = 9;
         byte _CurrentCountDownValue;
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
 
         public Lights CurrentLight
         {
@@ -73,8 +74,13 @@ namespace Traffic_Light
                 }
             }
         }
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
+
         public byte GreenTime { get { return _GreenTime; } set { _GreenTime = value; } }
+
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public byte RedTime { get { return _RedTime; } set { _RedTime = value; } }
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public byte OrangeTime { get { return _OrangeTime; } set { _OrangeTime = value; } }
 
         public byte GetCurrentTime()
